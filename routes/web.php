@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get("/", [Controller::class, "index"]);
 Route::get("/listbooks", [BookController::class, "list"]);
+Route::delete("/delete/{book}" , [BookController::class, "delete"])->name("book_delete");
