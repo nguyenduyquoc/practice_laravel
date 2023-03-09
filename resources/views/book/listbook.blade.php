@@ -9,16 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
-<div class="wrapper">
+<div class="container">
     <div class="title">
         <h2 style="text-align: center">List books</h2>
     </div>
     <div class="card-tools">
         <form action="{{url("/listbooks")}}" method="get">
             <div class="input-group input-group-sm" style="width: 500px;">
-                <input type="text" value="{{app("request")->input("search")}}" name="search" class="form-control float-right" placeholder="Search">
+                <input style="margin-right: 10px" type="text" value="{{app("request")->input("search")}}" name="search" class="form-control float-right" placeholder="Search">
                 <div class="input-group-append">
-                    <button type="submit" class="btn btn-default">Search</button>
+                    <button type="submit" class="btn btn-primary">Search</button>
                 </div>
             </div>
         </form>
